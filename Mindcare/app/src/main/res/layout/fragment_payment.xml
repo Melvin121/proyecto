@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffeded">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="76dp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registro de cita"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline41"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RelativeLayout
+                android:layout_width="235dp"
+                android:layout_height="131dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline42"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline41">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="74dp"
+                    android:layout_marginBottom="98dp"
+                    android:text="Ingrese fecha "
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editTextDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginBottom="16dp"
+                    android:ems="10"
+                    android:inputType="date" />
+
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="229dp" />
+
+            <RelativeLayout
+                android:layout_width="235dp"
+                android:layout_height="131dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline43"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline42">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="89dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="73dp"
+                    android:layout_marginBottom="96dp"
+                    android:text="Ingrese hora"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editTextTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginBottom="16dp"
+                    android:ems="10"
+                    android:inputType="time" />
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="398dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monto a pagar"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline44"
+                app:layout_constraintEnd_toStartOf="@+id/guideline45"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline43" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="470dp" />
+
+            <EditText
+                android:id="@+id/editTextNumberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                app:layout_constraintBottom_toTopOf="@+id/guideline44"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline45"
+                app:layout_constraintTop_toTopOf="@+id/guideline43" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="159dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pagar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline44" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="250dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

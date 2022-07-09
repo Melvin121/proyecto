@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/created">
+
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.example.mindcare.fragment_login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragment_login_to_catalogue"
+            app:destination="@id/catalogue" />
+    </fragment>
+    <fragment
+        android:id="@+id/created"
+        android:name="com.example.mindcare.created"
+        android:label="fragment_created"
+        tools:layout="@layout/fragment_created" >
+        <action
+            android:id="@+id/action_created_to_fragment_login"
+            app:destination="@id/fragment_login" />
+    </fragment>
+    <fragment
+        android:id="@+id/catalogue"
+        android:name="com.example.mindcare.catalogue"
+        android:label="fragment_catalogue"
+        tools:layout="@layout/fragment_catalogue" >
+        <action
+            android:id="@+id/action_catalogue_to_payment"
+            app:destination="@id/payment" />
+    </fragment>
+    <fragment
+        android:id="@+id/payment"
+        android:name="com.example.mindcare.payment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" />
+
+</navigation>
